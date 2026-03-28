@@ -1,0 +1,28 @@
+{
+  "name": "test-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && wrangler pages dev dist --compatibility-date=2025-01-01 --ip localhost --port 8788",
+    "dev:client": "vite --host localhost --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --host localhost --port 4173"
+  },
+  "dependencies": {
+    "@simplewebauthn/browser": "^11.0.0",
+    "@simplewebauthn/server": "^11.0.0",
+    "framer-motion": "^12.9.2",
+    "lucide-react": "^0.511.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tailwindcss": "^4.1.7",
+    "vite": "^7.0.0",
+    "vite-plugin-pwa": "^1.0.0",
+    "wrangler": "^4.15.2"
+  }
+}

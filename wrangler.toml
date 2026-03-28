@@ -1,0 +1,9 @@
+name = "test-app"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "test-app-db"
+database_id = "81776aa4-f531-47fc-98c7-a08cf90bb377"
+preview_database_id = "81776aa4-f531-47fc-98c7-a08cf90bb377"
